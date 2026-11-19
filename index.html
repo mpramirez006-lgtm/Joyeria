@@ -7,6 +7,10 @@
   <meta name="joyeria artesanal,hecho a mano, diseños unicos, creatividad, elegancia, delicadeza, belleza, estilo">
   <meta name="author" content="Paula Ramírez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
 <title>Joyeria LÛNA | Joyeria hecha a mano </title>
 
 </head>
@@ -15,24 +19,25 @@
 <body>
 
  <!-- ============= ENCABEZADO DE LA PÁGINA ==============-->
-<header class="Joyeria LÛNA">
+<header class="Joyeria-LUNA">
     <div class="container header-inicio">
-        <a href="#inicio" class="Logo para joyería LÛNA.png">
+        <a href="#inicio" class="Logo">
             <img src="img/logo.png" alt="Logo para joyería LUNA">
       
         </a>
 
-    <nav class="nav-Joyeria LÛNA">
+    <nav class="nav-Joyeria">
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
-          <li><a href="#about">about</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
 
         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Joyeria LÛNA .')">
           <i data-lucide="message-circle"></i> Pedir ahora
         </button>
+
 
     </nav>
 
@@ -44,8 +49,112 @@
 
 </header>
 
-<h1>Tu esencia convertida en joyeria </h1>
-<p>This is a paragraph.</p>
+<!-- =================CONTENIDO PRINCIPAL================== -->
+<main>
+<!-- ======= SECCIÓN DEL HERO ======== -->
+<section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDO A LUNA </p>
+      <h1 class="intro-title" id="intro-title">BRILLA CON.<br><span>ESTILO.</span></h1>
+      <p class="intro-description">Joyeria hecha a mano que te hace sentir única y brillante.</p>
+    </section>
+
+    <!--====AQUI VAMOS A COLOCAR EL VIDEO -->
+<!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/giro 1.mp4"
+          aria-label="Video de presentación">
+          <source src="img/giro 1.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> VISITAR SITIO</p>
+          <h2 class="media-card__title">BRILLA<br>CON LUNA</h2>
+          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/foto 1.png"
+          alt="Fotografia que representa collar"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number"> RECORRER TIENDA</p>
+          <h2 class="media-card__title">DETALLES QUE <br>ENAMORAN</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/foto 2.png"
+          alt="Fotografía que representa cisne en un collar "
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number"> COMPRAR</p>
+          <h2 class="media-card__title">TU ESTILO,<br>TU BRILLO</h2>
+          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
+
+
+
+
+</main>
+
+<!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> JOYERIA LUNA. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
 
 </body>
 </html>
